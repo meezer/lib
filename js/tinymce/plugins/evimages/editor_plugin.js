@@ -5,7 +5,7 @@
 	tinymce.create('tinymce.plugins.evimagesPlugin', {
 		
 		init : function(ed, url) {
-
+/*
 			ed.addCommand('evimages', function() {
 				var unixtime_ms = new Date().getTime();
 				ed.windowManager.open({
@@ -29,6 +29,8 @@
 			ed.onNodeChange.add(function(ed, cm, n) {
 				cm.setActive('evimages', n.nodeName == 'IMG');
 			});
+
+*/
 		},
 		createControl : function(n, cm) {
 			return null;
