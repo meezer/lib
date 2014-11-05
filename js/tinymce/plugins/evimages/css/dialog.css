@@ -1,4 +1,4 @@
-body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -text-align:center; padding:0 10px 0 5px;}
+body {padding:0 10px 0 5px;}
 h2 {color:#666; visibility:hidden;}
 
 .form-inline input {
@@ -22,4 +22,4 @@ h2 {color:#666; visibility:hidden;}
 #the_plugin_name a:hover {color:#333;}
 
 /* this class makes the upload script output visible */
-.upload_target_visible {width:100%!important; height:200px!important; border:1px solid #000!important; display:block!important}
+.upload_target_visible {width:100%!important; height:120px!important; border:1px solid #000!important; display:block!important}
