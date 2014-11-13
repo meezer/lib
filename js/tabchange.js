@@ -1,16 +1,26 @@
 $(function(){
-	$("#molmenu1").click( function(){
-		$("#tab_content2").css("display", "none");
-		$("#tab_content1").fadeIn(1200);
-		$("#tab_content2").fadeOut(1200);
-	});
-	
 
-	$("#molmenu2").click( function(){
-		$("#tab_content1").css("display", "none");
-		$("#tab_content1").fadeOut(1200);
-		$("#tab_content2").fadeIn(1200);
-		
+	$('.coingemsPanel').each(function(){
+
+		var tab1 = $(this).find('.molmenu1');
+		var tab2 = $(this).find('.molmenu2');
+
+		tab1.addClass('active');
+
+		var subPanel = $(this).find('.molist');
+
+		subPanel.eq(0).show();
+		subPanel.eq(1).hide();
+
+		tab1.click(function(){
+			subPanel.eq(1).hide();
+			subPanel.eq(0).fadeIn(500);
+		});
+		tab2.click(function(){
+			subPanel.eq(0).hide();
+			subPanel.eq(1).fadeIn(500);
+		});
+
 	});
 
     $('.payWayListWrapper').each(function(){
@@ -81,5 +91,3 @@ $(function(){
 
     });
 });
-
-$(function(){var _showTab=0;var $defaultLi=$('ul.moltab li').eq(_showTab).addClass('active');$($defaultLi.find('a').attr('href')).siblings().hide();$('ul.moltab li').click(function(){var $this=$(this),_clickTab=$this.find('a').attr('href');$this.addClass('active').siblings('.active').removeClass('active');$(_clickTab).stop(false,true).fadeIn().siblings().hide();return false;}).find('a').focus(function(){this.blur();});});$(function(){$("#molmenu1").click(function(){$("#tab_content2").css("display","none");$("#tab_content1").fadeIn(1200);$("#tab_content2").fadeOut(1200);});$("#molmenu2").click(function(){$("#tab_content1").css("display","none");$("#tab_content1").fadeOut(1200);$("#tab_content2").fadeIn(1200);});});
