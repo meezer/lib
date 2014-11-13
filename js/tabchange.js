@@ -2,22 +2,17 @@ $(function(){
 
 	$('.coingemsPanel').each(function(){
 
-		var tab1 = $(this).find('.molmenu1');
-		var tab2 = $(this).find('.molmenu2');
+		var tab1 = $(this).find('li.molmenu1');
+		var tab2 = $(this).find('li.molmenu2');
 
 		tab1.addClass('active');
 
 		var subPanel = $(this).find('.molist');
 
-		console.log($(this));
-
 		subPanel.eq(0).show();
 		subPanel.eq(1).hide();
 
 		tab1.click(function(){
-
-			console.log(subPanel);
-
 			subPanel.eq(1).hide();
 			subPanel.eq(0).fadeIn(500);
 		});
