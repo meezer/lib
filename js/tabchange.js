@@ -9,10 +9,15 @@ $(function(){
 
 		var subPanel = $(this).find('.molist');
 
+		console.log($(this));
+
 		subPanel.eq(0).show();
 		subPanel.eq(1).hide();
 
 		tab1.click(function(){
+
+			console.log(subPanel);
+
 			subPanel.eq(1).hide();
 			subPanel.eq(0).fadeIn(500);
 		});
