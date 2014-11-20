@@ -15,10 +15,14 @@ $(function(){
 		tab1.click(function(){
 			subPanel.eq(1).hide();
 			subPanel.eq(0).fadeIn(500);
+			tab2.removeClass('active');
+			tab1.addClass('active');
 		});
 		tab2.click(function(){
 			subPanel.eq(0).hide();
 			subPanel.eq(1).fadeIn(500);
+			tab1.removeClass('active');
+			tab2.addClass('active');
 		});
 
 	});
