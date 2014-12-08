@@ -2,8 +2,12 @@
 /*
 IGS Webteam Reset CSS
 Based on YUI and Eric Meyer and Normalize
-create: 20141009 | update: 201401027
+create: 20141009 | update: 201401208
 */
+html{box-sizing:border-box;} /* adjust safari height 100% */
+*, *:before, *:after { box-sizing: inherit; }  
+html, body {height:100%;}  /* adjust if left height must be 100% */
+
 body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, hr {margin:0;padding:0}
 a{background: transparent;}
 a:active, a:hover { outline: 0;}
